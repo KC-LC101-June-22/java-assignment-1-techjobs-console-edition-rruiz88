@@ -121,10 +121,10 @@ public class TechJobs {
         ///same as someJobs.size == 0
         if (someJobs.isEmpty()) {
             System.out.print("No Results");
-        } else {
+        } else { //loops thru array of each job
             for (HashMap<String, String> someJob : someJobs) {
                 System.out.println("\n"+"*****");
-
+                //loops thru job info and print key with value
                 for (Map.Entry<String, String> jobInfo : someJob.entrySet()) {
                     System.out.println(jobInfo.getKey() + ": " + jobInfo.getValue());
                 }
